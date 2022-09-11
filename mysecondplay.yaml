@@ -1,0 +1,12 @@
+---
+- name: "My first play"
+  hosts: localhost
+
+  tasks:
+  - name: "test reachablility"
+    ping:
+
+  - name: "find my files"
+    find:
+        path: /Users  /rdk/Documents/GITHUB/Ansible
+        file_type: file
